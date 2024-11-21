@@ -16,225 +16,223 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   
   <style>
-   
-   body {
-  background-color: #121211;
-  margin: 0;
+    body {
+      background-color: #121211;
+      margin: 0;
+      width: 100%;
+      height: 100vh;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 50% 50%; /* Two columns */
+      grid-gap: 10px;
+    }
+
+    h1 {
+      color: #FFFDF7;
+      font-size: 250px;
+      font-family: 'League Gothic', sans-serif;
+      margin: 0;
+      line-height: 1;
+      letter-spacing: 1;
+    }
+
+    p {
+      color: #FFFDF7;
+      font-family: 'Noto Sans', sans-serif;
+    }
+
+    .onLeftSide, .onRightSide {
+      position: relative;
+      display: block;
+    }
+
+    .onLeftSide {
+      grid-column: 1; /* Align left side content to the first column */
+    }
+
+    .onRightSide {
+      grid-column: 2; /* Align right side content to the second column */
+    }
+
+    .blacktext {
+      margin-left: 215px;
+      margin-top: 90px;
+      display: block;
+    }
+
+    .numberheaderintro {
+      font-family: 'League Gothic', sans-serif;
+      color: #C0BEB9;
+      font-size: 45px;
+      margin-top: 50px;
+      margin-left: 135px;
+      letter-spacing: 4px;
+    }
+
+    .numberheader {
+      font-family: 'League Gothic', sans-serif;
+      color: #C0BEB9;
+      font-size: 45px;
+      margin-top: 190px;
+      margin-left: 215px;
+      letter-spacing: 4px;
+    }
+
+    .descriptionheaderintro {
+      font-family: 'League Gothic', sans-serif;
+      color: #C0BEB9;
+      font-size: 75px;
+      margin-top: 90px;
+      margin-left: 135px;
+      letter-spacing: 4.5px;
+    }
+
+    .descriptionheaderwork {
+      font-family: 'League Gothic', sans-serif;
+      color: #FFFDF7;
+      font-size: 60px;
+      margin-left: 215px;
+      margin-top: 5px;
+      letter-spacing: 4px;
+    }
+
+    .bodytext {
+      font-family: 'Noto Sans', sans-serif;
+      color: #FFFDF7;
+      font-size: 15px;
+      margin-left: 215px;
+      margin-top: 25px;
+      word-spacing: 3px;
+      letter-spacing: 0.5px;
+      line-height: 25px;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      font-size: 30px;
+      color: black;
+      background-color: #FFFDF7;
+      border: 2px solid black;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .back-to-top:hover {
+      background-color: #f0f0f0;
+    }
+
+    #blackline1 {
+      width: 8px;
+      height: 450px;
+      background-color: #FFFDF7;
+      position: absolute;
+      top: 120px;
+      right: -85px;
+    }
+
+    #bookcover {
+      width: 65%;
+      height: auto;
+      margin-left: 100px;
+      margin-top: 215px;
+    }
+
+    a {
+      color: #FFFDF7;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #808080;
+    }
+
+    #productimg {
+      width: 90%;
+      height: auto;
+      margin-top: 250px;
+      margin-left: 150px;
+    }
+
+    #diptychimg {
+      width: 90%;
+    }
+
+    #personalposterimg {
+      width: 95%;
+      height: auto;
+      margin-left: 0px;
+      margin-top: 225px;
+      margin-bottom: 200px;
+    }
+
+    header {
   width: 100%;
-  height: 100vh;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Create two columns */
-  grid-gap: 20px; /* Add spacing between the columns */
-}
-
-h1 {
-  color: #FFFDF7;
-  font-size: 250px;
-  font-family: 'League Gothic', sans-serif;
-  margin: 0;
-  line-height: 1;
-  letter-spacing: 1;
-}
-
-p {
-  color: #FFFDF7;
-  font-family: 'Noto Sans', sans-serif;
-}
-
-.onLeftSide, .onRightSide {
-  position: relative;
-  display: block;
-}
-
-.onLeftSide {
-  grid-column: 1; /* Align left side content to the first column */
-}
-
-.onRightSide {
-  grid-column: 2; /* Align right side content to the second column */
-}
-
-.blacktext {
-  margin-left: 215px;
-  margin-top: 90px;
-  display: block;
-}
-
-.numberheaderintro {
-  font-family: 'League Gothic', sans-serif;
-  color: #C0BEB9;
-  font-size: 45px;
-  margin-top: 50px;
-  margin-left: 135px;
-  letter-spacing: 4px;
-}
-
-.numberheader {
-  font-family: 'League Gothic', sans-serif;
-  color: #C0BEB9;
-  font-size: 45px;
-  margin-top: 190px;
-  margin-left: 215px;
-  letter-spacing: 4px;
-}
-
-.descriptionheaderintro {
-  font-family: 'League Gothic', sans-serif;
-  color: #C0BEB9;
-  font-size: 75px;
-  margin-top: 90px;
-  margin-left: 135px;
-  letter-spacing: 4.5px;
-}
-
-.descriptionheaderwork {
-  font-family: 'League Gothic', sans-serif;
-  color: #FFFDF7;
-  font-size: 60px;
-  margin-left: 215px;
-  margin-top: 5px;
-  letter-spacing: 4px;
-}
-
-.bodytext {
-  font-family: 'Noto Sans', sans-serif;
-  color: #FFFDF7;
-  font-size: 15px;
-  margin-left: 215px;
-  margin-top: 25px;
-  word-spacing: 3px;
-  letter-spacing: 0.5px;
-  line-height: 25px;
-}
-
-.back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  font-size: 30px;
-  color: black;
-  background-color: #FFFDF7;
-  border: 2px solid black;
-  padding: 10px;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: 1000; 
   text-align: center;
-  text-decoration: none;
+  padding: 20px 0;
+  background-color: rgba(18, 18, 17, 0.9); 
 }
 
-.back-to-top:hover {
-  background-color: #f0f0f0;
-}
+    nav ul {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
 
-#blackline1 {
-  width: 8px;
-  height: 450px;
-  background-color: #FFFDF7;
-  position: absolute;
-  top: 120px;
-  right: -85px;
-}
+    nav li {
+      display: inline-block;
+      margin-right: 20px;
+    }
 
-#bookcover {
-  width: 65%;
-  height: auto;
-  margin-left: 100px;
-  margin-top: 215px;
-}
+    nav a {
+      color: #FFFDF7;
+      text-decoration: none;
+      font-family: 'Noto Sans', sans-serif;
+      display: block;
+      text-align: center;
+    }
 
-a {
-  color: #FFFDF7;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #808080;
-}
-
-#productimg {
-  width: 90%;
-  height: auto;
-  margin-top: 250px;
-  margin-left: 150px;
-}
-
-#diptychimg {
-  width: 90%;
-}
-
-#personalposterimg {
-  width: 95%;
-  height: auto;
-  margin-left: 0px;
-  margin-top: 225px;
-  margin-bottom: 200px;
-}
-
-header {
-  width: 100%;
-  position: relative;
-  margin: 0 auto;
-  text-align: center;
-  padding: 1px;
-}
-
-nav ul {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-nav a {
-  color: #FFFDF7;
-  text-decoration: none;
-  font-family: 'Noto Sans', sans-serif;
-  display: block;
-  text-align: center;
-}
-
-nav a:hover,
-nav a:active {
-  color: #808080;
-}
+    nav a:hover,
+    nav a:active {
+      color: #808080;
+    }
 
     @media (max-width: 768px) {
-  body {
-    grid-template-columns: 1fr; 
-  }
+      body {
+        grid-template-columns: 1fr; 
+      }
 
-  .onLeftSide, .onRightSide {
-    grid-column: 1; 
-  }
+      .onLeftSide, .onRightSide {
+        grid-column: 1; 
+      }
 
-  .blacktext, .numberheaderintro, .descriptionheaderintro {
-    margin-left: 0;
-    margin-top: 0;
-  }
-}
-
+      .blacktext, .numberheaderintro, .descriptionheaderintro {
+        margin-left: 0;
+        margin-top: 0;
+      }
+    }
   </style>
 </head>
 <body>
-  
-
   <div id="top" style="height: 1px;"></div>
    
-  
   <header>
     <nav>
-        <ul>
-          <li><a href="/">HOME</a></li>
-          <li><a href="/">ILLUSTRATOR</a></li>
-          <li><a href="/">PHOTOSHOP</a></li>
-          <li><a href="/">RECENT PROJECTS</a></li>
-          <li><a href="/">ABOUT ME</a></li>
-        </ul>
-      </nav>
+      <ul>
+        <li><a href="/">HOME</a></li>
+        <li><a href="/">ILLUSTRATOR</a></li>
+        <li><a href="/">PHOTOSHOP</a></li>
+        <li><a href="/">RECENT PROJECTS</a></li>
+        <li><a href="/">ABOUT ME</a></li>
+      </ul>
+    </nav>
   </header>
 
   <div class="onLeftSide">
@@ -246,76 +244,52 @@ nav a:active {
     <div id="blackline1"> 
     </div>
     
-     <!-- text for book cover -->
-    
+    <!-- text for book cover -->
     <h1 class="numberheader">01</h1>
-      
     <h1 class="descriptionheaderwork">
-    BOOK COVER DESIGN
+      BOOK COVER DESIGN
     </h1>
     
     <p class="bodytext">
-     
-This project was completed as part of a media arts class assignment in high school. The objective was to choose a specific genre and, using Photoshop, design a compelling book cover. I selected the thriller genre and focused on creating a design that would capture its suspenseful and gripping nature. All the images used in the project were royalty-free, ensuring the ethical use of resources. The process began with carefully selecting and editing images to align with the theme, followed by incorporating typography that enhanced the mood and reinforced the genre's aesthetic. I explored various design elements, including experimenting with colour grading, fine-tuning the composition for balance, and adding details to create a professional and polished final look. Key Photoshop tools such as layer masks, blending modes, and custom textures were used to bring my vision to life. This project not only strengthened my understanding of visual storytelling but also helped me improve my technical skills in Photoshop, offering valuable insights into how design choices can effectively communicate a narrative.
+      This project was completed as part of a media arts class assignment in high school. The objective was to choose a specific genre and, using Photoshop, design a compelling book cover. I selected the thriller genre and focused on creating a design that would capture its suspenseful and gripping nature. All the images used in the project were royalty-free, ensuring the ethical use of resources. The process began with carefully selecting and editing images to align with the theme, followed by incorporating typography that enhanced the mood and reinforced the genre's aesthetic. I explored various design elements, including experimenting with colour grading, fine-tuning the composition for balance, and adding details to create a professional and polished final look. Key Photoshop tools such as layer masks, blending modes, and custom textures were used to bring my vision to life. This project not only strengthened my understanding of visual storytelling but also helped me improve my technical skills in Photoshop, offering valuable insights into how design choices can effectively communicate a narrative.
     </p>
     
-     <!-- product poster image-->
-    
-     <img src="product.jpg" alt="resume imagery" id="productimg">
-
+    <!-- product poster image-->
+    <img src="product.jpg" alt="resume imagery" id="productimg">
   </div>
 
   <div class="onRightSide">
-     <!-- intro content -->
+    <!-- intro content -->
     <h1 class="descriptionheaderintro">CHOSEN WORKS</h1>
     <h1 class="numberheaderintro">01. <span style="color:black"><a href="#bookcover">BOOK COVER DESIGN</a></span></h1>
     <h1 class="numberheaderintro" id="resume" >02. <span style="color:black"><a href="#resumeimg">PRODUCT POSTER</a></span></h1>
     <h1 class="numberheaderintro" id="heropage">03. <span style="color:black"><a href="#heropageimg">PERSONAL POSTERS</a></span></h1>
     <h1 class="numberheaderintro" id="magazine">04. <span style="color:black"><a href="#magazineimg">DIPTYCH POSTERS</a></span></h1>
     
-     <!-- image for wet book cover -->
+    <!-- image for wet book cover -->
     <img src="bookcover.png" alt="book cover imagery" id="bookcover">
     
-     <!-- text for product poster -->
-    
+    <!-- text for product poster -->
     <h1 class="numberheader" style="margin-left: 100px; margin-top: 260px;">02</h1>
-      
     <h1 class="descriptionheaderwork" style="margin-left: 100px; margin-top: 5px;">
-     PRODUCT POSTER <br>DESIGN
+      PRODUCT POSTER DESIGN
     </h1>
 
-
     <p class="bodytext" style="margin-left: 100px; margin-top: 25px;">
-  This project was completed as part of my Communications <br>Technology course, where the primary goal was to select a <br>product and design a visually compelling advertisement for <br>it using Photoshop.The objective was not only to effectively <br>present the product but also to demonstrate a thorough <br>understanding of  Photoshop techniques. This included applying <br>concepts such as layout design, colour theory, and typography <br>to ensure the ad was both visually appealing. We were encouraged<br> to experiment with tools like layer effects, blending modes, and<br> image retouching to enhance the overall composition and <br>create a polished, professional-quality final piece.
-</p>
- 
+       This project was completed as part of my Communications <br>Technology course, where the primary goal was to select a <br>product and design a visually compelling advertisement for <br>it using Photoshop.The objective was not only to effectively <br>present the product but also to demonstrate a thorough <br>understanding of  Photoshop techniques. This included applying <br>concepts such as layout design, colour theory, and typography <br>to ensure the ad was both visually appealing. We were encouraged<br> to experiment with tools like layer effects, blending modes, and<br> image retouching to enhance the overall composition and <br>create a polished, professional-quality final piece.
+
+    </p>
   </div>
      
   <div class="onRightSide" style="margin-right: 20px;">
-  <img src="personalposters.png" alt="Magazine image" id="personalposterimg">
-</div>
-  
-  <div class="onLeftSide">
-    
-    <h1 class="numberheader" style="margin-top: 250px; margin-left: 150px">03</h1>
-      
-    <h1 class="descriptionheaderwork" style="margin-left: 150px">
-     PERSONAL POSTERS
-      
-    </h1>
-    
-    <p class="bodytext" style="margin-left: 150px" >
-      This project was completed as part of GBDA 202, with the goal of creating a digital self-portrait as a designer through the medium of posters. I created four unique posters, each highlighting a different aspect of my identity as a designer: my skills, my favourite designer, my goals, and my design principles. The overarching objective was to communicate my story and style as a designer. I used Photoshop as my primary tool, allowing me to experiment with layering, textures, and effects to bring my vision to life. This project not only showcased my design abilities but also gave me the opportunity to reflect on my growth and aspirations in the field.
-    </p>
-    
+    <img src="personalposters.png" alt="Magazine image" id="personalposterimg">
   </div>
   
-   <a href="#top" class="back-to-top">↑</a> 
+  <div class="onLeftSide" style="margin-left: 30px;">
+    <img src="diptych.jpg" alt="Diptych image" id="diptychimg">
+  </div>
 
+  <div id="top" style="height: 10px;">
+  </div>
 </body>
 </html>
-
-
-
-
-
