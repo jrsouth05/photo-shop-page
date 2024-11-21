@@ -17,192 +17,205 @@
   
   <style>
    
-    body {
-      background-color: #121211; 
-      margin: 0;
-      width: 100%; 
-      height: 100vh;
-      padding: 20px;
-    }
-    
-    h1 {
-      color: #FFFDF7;
-      font-size: 250px; 
-      font-family: 'League Gothic', sans-serif; 
-      margin: 0;
-      line-height: 1;
-      letter-spacing: 1; 
-    }
-    
-  
-    p {
-      color: #FFFDF7;
-      font-family: 'Noto Sans', sans-serif; 
-    }
-    
-    .onLeftSide {
-      width: 46%;
-      float: left;
-      position: relative; 
-    }
-    
-    .onRightSide {
-      width: 50%;
-      float: right;
-      position: relative; 
-      padding: 20px;
-    }
-  
-    .blacktext {
-      margin-left: 215px; 
-      margin-top: 90px;
-      display: block; 
-    }
- 
-     .numberheaderintro {
-      font-family: 'League Gothic', sans-serif;
-      color: #C0BEB9; 
-      font-size: 45px; 
-       margin-top: 50px; 
-      margin-left: 135px;
-      letter-spacing: 4px; 
-    }
-    
-     .numberheader {
-      font-family: 'League Gothic', sans-serif;
-      color: #C0BEB9; 
-      font-size: 45px; 
-      margin-top: 190px; 
-      margin-left: 215px;
-      letter-spacing: 4px; 
-    }
-
-   .descriptionheaderintro {
-      font-family: 'League Gothic', sans-serif;
-      color: #C0BEB9;
-      font-size: 75px;
-      margin-top: 90px;
-      margin-left: 135px;
-      letter-spacing: 4.5px; 
-    }
-    
-    .descriptionheaderwork {
-      font-family: 'League Gothic', sans-serif;
-      color: #FFFDF7;
-      font-size: 60px;
-      margin-left: 215px;
-      margin-top: 5px; 
-      letter-spacing: 4px; 
-    }
-
-    .bodytext {
-       font-family: 'Noto Sans', sans-serif;
-      color: #FFFDF7;
-      font-size: 15px; 
-      margin-left: 215px;
-      margin-top: 25px; 
-      word-spacing: 3px; 
-      letter-spacing: 0.5px; 
-      line-height: 25px;
-    }
-    
-    .back-to-top {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      font-size: 30px;
-      color: black;
-      background-color: #FFFDF7;
-      border: 2px solid black;
-      padding: 10px;
-      text-align: center;
-      text-decoration: none;
-    }
-
-    .back-to-top:hover {
-      background-color: #f0f0f0;
-    }
-    
-      
-    #blackline1 {
-      width: 8px;
-      height: 450px;
-      background-color: #FFFDF7; 
-      position: absolute;
-      top: 120px; 
-      right: -85px; 
-    }
-    
-  
-    #bookcover{
-      width: 65%;
-      height: auto;
-      margin-left: 100px; 
-      margin-top: 215px; 
-    }
-    
-    a{
-      color: #FFFDF7;
-      text-decoration: none; 
-    }
-    
-    a:hover{
-      color: #808080;
-    }
-    
-    
-    #productimg{
-      width: 90%;
-      height: auto;
-      margin-top: 250px; 
-      margin-left: 150px; 
-    }
-    
-    #diptychimg{
-      width: 90%
-    } 
-    
-    #personalposterimg{
-      width: 95%;
-      height: auto;
-      margin-left: 0px; 
-      margin-top: 225px; 
-      margin-bottom: 200px;
-    }
- 
-   header {
+   body {
+  background-color: #121211;
+  margin: 0;
   width: 100%;
-      position: relative;
-      margin: 0 auto;  
-      text-align: center;  
-      padding: 1px;
+  height: 100vh;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Create two columns */
+  grid-gap: 20px; /* Add spacing between the columns */
+}
+
+h1 {
+  color: #FFFDF7;
+  font-size: 250px;
+  font-family: 'League Gothic', sans-serif;
+  margin: 0;
+  line-height: 1;
+  letter-spacing: 1;
+}
+
+p {
+  color: #FFFDF7;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.onLeftSide, .onRightSide {
+  position: relative;
+  display: block;
+}
+
+.onLeftSide {
+  grid-column: 1; /* Align left side content to the first column */
+}
+
+.onRightSide {
+  grid-column: 2; /* Align right side content to the second column */
+}
+
+.blacktext {
+  margin-left: 215px;
+  margin-top: 90px;
+  display: block;
+}
+
+.numberheaderintro {
+  font-family: 'League Gothic', sans-serif;
+  color: #C0BEB9;
+  font-size: 45px;
+  margin-top: 50px;
+  margin-left: 135px;
+  letter-spacing: 4px;
+}
+
+.numberheader {
+  font-family: 'League Gothic', sans-serif;
+  color: #C0BEB9;
+  font-size: 45px;
+  margin-top: 190px;
+  margin-left: 215px;
+  letter-spacing: 4px;
+}
+
+.descriptionheaderintro {
+  font-family: 'League Gothic', sans-serif;
+  color: #C0BEB9;
+  font-size: 75px;
+  margin-top: 90px;
+  margin-left: 135px;
+  letter-spacing: 4.5px;
+}
+
+.descriptionheaderwork {
+  font-family: 'League Gothic', sans-serif;
+  color: #FFFDF7;
+  font-size: 60px;
+  margin-left: 215px;
+  margin-top: 5px;
+  letter-spacing: 4px;
+}
+
+.bodytext {
+  font-family: 'Noto Sans', sans-serif;
+  color: #FFFDF7;
+  font-size: 15px;
+  margin-left: 215px;
+  margin-top: 25px;
+  word-spacing: 3px;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: black;
+  background-color: #FFFDF7;
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.back-to-top:hover {
+  background-color: #f0f0f0;
+}
+
+#blackline1 {
+  width: 8px;
+  height: 450px;
+  background-color: #FFFDF7;
+  position: absolute;
+  top: 120px;
+  right: -85px;
+}
+
+#bookcover {
+  width: 65%;
+  height: auto;
+  margin-left: 100px;
+  margin-top: 215px;
+}
+
+a {
+  color: #FFFDF7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #808080;
+}
+
+#productimg {
+  width: 90%;
+  height: auto;
+  margin-top: 250px;
+  margin-left: 150px;
+}
+
+#diptychimg {
+  width: 90%;
+}
+
+#personalposterimg {
+  width: 95%;
+  height: auto;
+  margin-left: 0px;
+  margin-top: 225px;
+  margin-bottom: 200px;
+}
+
+header {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1px;
 }
 
 nav ul {
-  display: inline-block;  
+  display: inline-block;
   margin: 0;
-      padding: 0;
-      list-style: none; 
-
+  padding: 0;
+  list-style: none;
 }
 
-    nav li {
-      display: inline-block; 
-      margin-right: 20px; 
-    }
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
 
-    nav a {
-      color: #FFFDF7;
-      text-decoration: none;
-      font-family: 'Noto Sans', sans-serif;
-      display: block;
-      text-align: center;
-    }
+nav a {
+  color: #FFFDF7;
+  text-decoration: none;
+  font-family: 'Noto Sans', sans-serif;
+  display: block;
+  text-align: center;
+}
 
-    nav a:hover,
-    nav a:active {
-      color: #808080; 
-    }
+nav a:hover,
+nav a:active {
+  color: #808080;
+}
+
+    @media (max-width: 768px) {
+  body {
+    grid-template-columns: 1fr; 
+  }
+
+  .onLeftSide, .onRightSide {
+    grid-column: 1; 
+  }
+
+  .blacktext, .numberheaderintro, .descriptionheaderintro {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
 
   </style>
 </head>
